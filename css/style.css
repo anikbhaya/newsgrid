@@ -116,11 +116,13 @@ p{
 }
 
 .category{
+  display: inline-block;
   font-size: .7rem;
   text-transform: uppercase;
   padding: 5px 10px;
   border-radius: 15px;
   color: #fff;
+  margin-bottom: 5px;
 }
 
 .category-sports{
@@ -172,7 +174,9 @@ p{
 
 #main-nav .social-icons a{
   color: gray;
+  margin: 0 5px;
 }
+
 
 /* Showcase */
 
@@ -301,4 +305,40 @@ p{
 
 #about .container >*:first-child{
   grid-row: 1/span 3;
+}
+
+
+
+
+/* Media Query */
+
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 768px){
+  .menu{
+    display: none!important;
+  }
+  .showcase-container{
+    height: auto;
+    grid-template-columns: 1fr;
+    padding: 2rem 0;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+  .social-icons{
+    display: none;
+  }
+  #main-nav .container{
+    grid-template-columns: 1fr!important;
+  }
+  #main-nav .container .logo{
+    display: flex;
+    justify-content: center;
+  }
+  #articles .articles-container .card{
+    grid-template-columns: 1fr;
+  }
 }
