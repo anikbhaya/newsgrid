@@ -341,4 +341,7 @@ p{
   #articles .articles-container .card{
     grid-template-columns: 1fr;
   }
+  #footer .footer-sections > div{
+    border-bottom: 0!important;
+  }
 }
